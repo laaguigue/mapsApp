@@ -15,16 +15,36 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.cmlglobal.map"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDIFlnIgltJYChmO9M51VuRPkT0khzN7qc" //AIzaSyDIFlnIgltJYChmO9M51VuRPkT0khzN7qc
+        }
+      },
+      "package": "......"//com.cmlglobal.map
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "isAndroidBackgroundLocationEnabled": false
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "....." //c2119b37-656e-46d4-b4dc-39da3383f9c2
+      }
     }
   }
 }
